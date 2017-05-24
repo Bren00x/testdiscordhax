@@ -1,4 +1,5 @@
 var mp3snd = "https://archive.org/download/SNOOPDOGG-DROPITLIKEITSHOTMINECRAFTPARODY/meme.mp4";
+var text = "";
 var script = document.createElement('script');
 script.src = 'https://code.jquery.com/jquery-1.11.0.min.js';
 script.type = 'text/javascript';
@@ -13,11 +14,8 @@ setTimeout(function(){
 $("#audioElement").attr("src", "https://archive.org/download/SNOOPDOGG-DROPITLIKEITSHOTMINECRAFTPARODY/meme.mp4").attr("autoplay", "autoplay");
 
  
-}, 3000);
-
-var text = "";
-
-$("#audioElement").bind("timeupdate", function() {
+  
+  $("#audioElement").bind("timeupdate", function() {
     var currentTime = parseInt(this.currentTime, 10);
     if(currentTime == 1) { 
       text = "Miiiiiiiinnnnnnnnnnneeeeeeeee";
@@ -28,6 +26,15 @@ if(currentTime == 4) {
         
     }
 });
+  
+  
+  
+  
+}, 3000);
+
+
+
+
 
 
 function postmsg(txt) {
