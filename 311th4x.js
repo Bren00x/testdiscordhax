@@ -23,7 +23,8 @@ $("#audioElement").attr("src", "https://archive.org/download/SNOOPDOGG-DROPITLIK
     }
 
 if(currentTime == 4) { 
-        
+        text = "test 2";
+        postmsg(text);
     }
 });
   
