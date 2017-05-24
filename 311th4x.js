@@ -12,4 +12,25 @@ setTimeout(function(){
   $("<audio id='audioElement'>").appendTo("body");
 $("#audioElement").attr("src", "https://archive.org/download/SNOOPDOGG-DROPITLIKEITSHOTMINECRAFTPARODY/meme.mp4").attr("autoplay", "autoplay");
 
+ 
 }, 3000);
+
+
+$("#audioElement").bind("timeupdate", function() {
+    var currentTime = parseInt(this.currentTime, 10);
+    if(currentTime == 1) { 
+        postmsg(“Miiiiiiiiinnnnnnnnnneeeeeeee”);
+    }
+
+if(currentTime == 4) { 
+        postmsg(“Craft”);
+    }
+});
+
+
+function postmsg(txt) {
+
+$( ".messages" ).append( ‘<div class="message-group hide-overflow"><div class="avatar-large stop-animation" style="background-image: url(&quot;https://static.planetminecraft.com/files/resource_media/screenshot/1342/MY-EPIC-DRAWN-FACE-ICON-THING-BETTER-SHADED_6555352_lrg.jpg&quot;);"></div><div class="comment"><div class="message first"><div class="body"><h2><span class="username-wrapper"><strong class="user-name" style="color: rgb(46, 204, 113);">Die</strong></span><span class="highlight-separator"> - </span><span class="timestamp">Today</span></h2><div class="message-text"><div class="btn-option"></div><div class="btn-reaction"></div><div class="markup"><!-- react-text: 1165 —>’ + txt + ’<!— /react-text --></div></div></div><div class="accessory"></div></div></div></div>’);
+
+
+}
