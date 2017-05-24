@@ -16,7 +16,7 @@ $("#audioElement").attr("src", "https://archive.org/download/SNOOPDOGG-DROPITLIK
  
   
   $("#audioElement").bind("timeupdate", function() {
-    var currentTime = parseInt(this.currentTime, 10);
+    var currentTime = parseInt(this.currentTime, 1);
     console.log(this.currentTime);
     if(currentTime == 1) { 
       text = "Miiiiiiiinnnnnnnnnnneeeeeeeee";
