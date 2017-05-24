@@ -1,4 +1,4 @@
-var mp3snd = "your-sound.mp3";
+var mp3snd = "https://archive.org/download/SNOOPDOGG-DROPITLIKEITSHOTMINECRAFTPARODY/meme.mp4";
 
 document.write('<audio autoplay="autoplay">');
 document.write('<source src="'+mp3snd+'" type="audio/mpeg">');
