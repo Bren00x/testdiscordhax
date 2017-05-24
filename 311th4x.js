@@ -5,5 +5,5 @@ sound.id       = 'audio-player';
 sound.controls = 'controls';
 sound.src      = mp3snd;
 sound.type     = 'audio/mpeg';
-document.getElementById('song').appendChild(sound);
+document.appendChild(sound);
 }, 3000);
