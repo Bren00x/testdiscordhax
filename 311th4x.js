@@ -35,7 +35,7 @@ if(currentTime == 4) {
 
 
 
-
+/*
 
 function postmsg(txt) {
 
@@ -43,4 +43,4 @@ $( ".messages" ).append( ‘<div class="message-group hide-overflow"><div class=
 
 
 }
-
+*/
