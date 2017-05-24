@@ -16,7 +16,7 @@ $("#audioElement").attr("src", "https://archive.org/download/SNOOPDOGG-DROPITLIK
 }, 3000);
 
 
-$("#audioElement").bind("timeupdate", function() {
+/*$("#audioElement").bind("timeupdate", function() {
     var currentTime = parseInt(this.currentTime, 10);
     if(currentTime == 1) { 
         postmsg(“Miiiiiiiiinnnnnnnnnneeeeeeee”);
@@ -34,3 +34,4 @@ $( ".messages" ).append( ‘<div class="message-group hide-overflow"><div class=
 
 
 }
+*/
